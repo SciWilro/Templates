@@ -1,0 +1,69 @@
+---
+title: ""
+author: "[Wilro van Niekerk](https://github.com/SciWilro)"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+mail: "mr.wilro@gmail.com"
+twitter: "The_Wilro"
+github: "SciWilro"
+output:
+  html_document:
+    css: style.css
+    code_folding: "show"
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    theme: sketchy
+    highlight: tango
+    number_sections: TRUE
+    includes:
+      after_body: footer.html
+#  epuRate::epurate:
+
+
+---
+
+```{r}
+knitr::opts_chunk$set(cache=TRUE)
+# rmarkdown::render_site() # render index.html
+```
+
+<br><br>
+
+> Description of Document and [important sections](#Setup-Libraries) or boss links https://holtzy.github.io/Pimp-my-rmd/#Anchor-URL-link
+
+
+# Setup Libraries {#Setup-Libraries}
+***
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(rmarkdown)    # You need this library to run this template.
+```
+
+
+# Data preprocessing {.tabset .tabset-fade .tabset-pills}
+***
+Data Description
+
+## Getting The Data {#Getting-The-Data}
+
+## Data Cleanup {#Data-Cleanp}
+
+```{r}
+
+```
+## Cleaned Dataset {#Cleaned-Dataset}
+
+```{r}
+library(DT)
+datatable(mtcars, rownames = FALSE, filter="top", options = list(pageLength = 5, scrollX=T) )
+```
+
+<br></br>
+
+# Session Information {#Session-Information} 
+***
+
+```{r}
+sessionInfo()
+```
