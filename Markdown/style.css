@@ -1,0 +1,16 @@
+
+/*
+SPACES BEFORE HEADERS
+*/
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 84px;
+}
+
+/*
+ADD TIP BOX TO HIGHLIGHT SOMETHING IMPORTANT
+*/
+
+<style>
+div.tip { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
