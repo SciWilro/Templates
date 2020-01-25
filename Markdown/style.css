@@ -14,3 +14,34 @@ ADD TIP BOX TO HIGHLIGHT SOMETHING IMPORTANT
 <style>
 div.tip { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </style>
+
+/*
+Tabs/Buttons
+*/
+
+.btn {
+    border-width: 0 0px 0px 0px;
+    font-weight: normal;
+    text-transform: ;
+}
+.btn-default {
+    color: #2ecc71;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+/*
+Custom caption
+Called using defualt annotation {r, fig.align="center", fig.width=6, fig.height=6, fig.cap="Figure: Here is a really important caption."}
+*/
+
+<style>
+p.caption {
+  font-size: 0.9em;
+  font-style: italic;
+  color: grey;
+  margin-right: 10%;
+  margin-left: 10%;  
+  text-align: justify;
+}
+</style>
